@@ -36,29 +36,7 @@ public class CardGame {
 		// TODO: As game progresses, the p1cards and p2cards stacks should get smaller
 		// TODO: As game progresses, the p1cardsWon and p2CardsWon should get bigger, depending on who wins each round
 		// TODO: When the game is over, display who won the game; in other words, is p1cardsWon or p2cardsWon bigger?
-		List Ttop,Tbot;
-		while ((p1cards !=  0 ) &&(p2cards != 0)) {
-			p1cardsWon = rank(p1cards->card);
-			p2cardsWon = rank(p2cards->card);
-			Ttop = p1cards; 
-			Tbot= p2cards;
-			p1cards = p1cards->next;
-			p2cards = p2cards->next;
-			Ttop->next = Tbot;
-			Tbot->next = 0;
-			
-			if (p1cardsWon > p2cardsWon) {
-				if (p1cards == 0) p1cards = Ttop;
-				else Abot->next = Ttop;
-				Abot = Tbot;
-			}
-			else {
-				if ( p2cards == 0) p2cards = Ttop;
-				else Bbot-> next= Ttop;
-				Bbot = Tbot;
-			}
-			
-		}
+		
 	}
 	
 
